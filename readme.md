@@ -4,14 +4,14 @@ Dopo 30 secondi i numeri scompaiono e l'utente deve inserire, uno alla volta, i 
 Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati. -->
 
 dichiaro const output e seleziono la section#output
-dichiaro un array vuoto randomInt
+dichiaro un array vuoto randomNumber
 dichiaro un array vuoto userNumbers
 dichiaro un array vuoto equalNumbers
 
 creo una funzione getRandomInt che generi un numero random
 
 creo un ciclo for che per 5 volte 
-    invoca la funzione getRandomInt
+    dichiaro randomInt ed invoca la funzione getRandomInt
     pusho il numero in randomInt
     crea un elemento p 
     appendo p ad output
