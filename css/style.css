@@ -21,6 +21,9 @@ footer section {
     justify-content: space-between;
 }
 
+main {
+    text-align: center;
+}
 nav img {
     height: 3rem;
 }
