@@ -16,18 +16,25 @@ while (randomNumbers.length != 5) {
         liElement.append(randomInt);
     }
 };
-
-setTimeout (function(){
+setTimeout(function () {
     output.innerHTML = ''
-    for (i=0; i<5; i++) {
-        let userInt = Number.parseInt(prompt('Scrivi un numero di secondi da attendere'), 10);
+}, 2800);
+
+setTimeout(function () {
+    for (let i = 0; i < 5; i++) {
+        let userInt = Number.parseInt(prompt('Scrivi un numero che pensi fosse nella lista dei numeri random'), 10);
         userNumbers.push(userInt)
     }
-
-    for (i=0; i<randomNumbers; i++) {
-        if (userNumbers.includes(randomNumbers[i])) {
-            equalNumbers.push(randomNumbers[i])
+    for (let j = 0; j < randomNumbers.length; j++) {
+        if (userNumbers.includes(randomNumbers[j])) {
+            equalNumbers.push(randomNumbers[j])
         }
     }
-    console.log(equalNumbers, equalNumbers.length)
-},3000)
+    if (equalNumbers.length > 0) {
+        console.log('Hai indovinato ' + equalNumbers.length + ' numeri')
+        console.log('I numeri che hai indovinato sono: ' + equalNumbers)
+    }
+    else {
+        console.log('Non hai indovinato nessun numero sei un cretino!')
+    }
+}, 3000)
