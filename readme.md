@@ -12,7 +12,7 @@ creo una funzione getRandomInt che generi un numero random
 
 creo un ciclo for che per 5 volte 
     dichiaro randomInt ed invoca la funzione getRandomInt
-    pusho il numero in randomInt
+    pusho il numero in randomNumbers
     crea un elemento p 
     appendo p ad output
     appendo randomInt al p
@@ -21,6 +21,6 @@ setto un timeout dopo 30000ms
     che cancelli il contenuto di output 
     chieda per 5 volte di inserire un numero
     salvo i 5 numeri dell'utente in userNumbers
-    creo un ciclo che scorra gli elementi di randomInt
-        se usernumber include randomInt[i] allora push randomInt[i] in equalNumber
+    creo un ciclo che scorra gli elementi di randomNumbers
+        se usernumber include randomNumbers[i] allora push randomNumbers[i] in equalNumber
     stampo equalNumber.length e equalNumber
